@@ -1,10 +1,12 @@
+install.packages("dslabs")
+install.packages("dplyr")
+install.packages("tidyverse")
+install.packages("psych")
+install.packages("ggplot2")
 library(dplyr)
 library(tidyverse)
 library(ggplot2)
 library(psych)
-library(ctv)
-
-
 
 #rm(gapminder)
 
@@ -96,7 +98,8 @@ View(intialCost)
 
 #### This is total revenue 
 
-totalRev <- read.csv(file = "/home/o/ocampod/fall2017/Econ591/data/Calculation.csv", header=TRUE, sep= ",")
+totalRev <- read.csv(file = "/home/ochampo/fall2017/Business-Plan/Econ591/data/Calculation.csv", header=TRUE, sep= ",")
+
 View(totalRev)
 totalRev
 
@@ -140,3 +143,9 @@ sum(totalRevenueCombine$budget)
 
 totalRevenueCombine <- read.csv(file = "/home/o/ocampod/fall2017/Econ591/TotalRev.csv", header=TRUE, sep= ",")
 totalRevenueCombine
+
+####### Burn Rate ########
+BurnRate <- read.csv(file = "/home/ochampo/fall2017/Business-Plan/Econ591/Business-Plan/BurnRate  - Sheet1.csv", header=TRUE, sep= ",")
+
+
+
